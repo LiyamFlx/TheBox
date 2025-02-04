@@ -6,97 +6,113 @@
     <title>EngageSense: Redefining Audience Engagement</title>
     <style>
         body {
-            font-family: 'Arial, sans-serif';
-            background-color: #121212;
-            color: #f0f0f0;
+            font-family: 'Helvetica, Arial, sans-serif';
+            background-color: #000;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #1e1e1e;
-            padding: 3rem 0;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+            padding: 3rem 0;
         }
 
         header h1 {
-            color: #00d4ff;
             font-size: 3rem;
-            margin: 0;
-            letter-spacing: 2px;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            display: inline-block;
+            padding-bottom: 0.5rem;
         }
 
         nav {
-            background: #1e1e1e;
-            text-align: center;
-            padding: 1rem 0;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
-            color: #00d4ff;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
-            padding: 0.5rem 1.5rem;
-            transition: all 0.3s ease;
+            margin: 0 1.5rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #ffffff;
-            text-shadow: 0 0 10px #00d4ff;
+            color: #ccc;
         }
 
         section {
-            padding: 4rem 10%;
+            padding: 3rem 10%;
         }
 
         h2 {
-            color: #00d4ff;
-            font-size: 2rem;
+            font-size: 2.2rem;
+            color: #fff;
+            border-left: 4px solid #fff;
+            padding-left: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
-        p, li {
+        p, ul, li {
             font-size: 1.1rem;
             line-height: 1.8;
         }
 
+        ul {
+            list-style-type: square;
+            padding-left: 2rem;
+        }
+
         .highlight {
-            background: rgba(0, 212, 255, 0.1);
+            background-color: #111;
             padding: 1.5rem;
-            border-left: 5px solid #00d4ff;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+            border-left: 5px solid #fff;
+            margin-bottom: 2rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 2rem 0;
+            color: #fff;
         }
 
         table th, table td {
             padding: 1rem;
             text-align: left;
+            border: 1px solid #333;
         }
 
         table th {
-            background: #00d4ff;
-            color: #121212;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #1e1e1e;
+            background-color: #222;
         }
 
         footer {
             text-align: center;
             padding: 2rem;
-            background: #1e1e1e;
-            color: #f0f0f0;
+            background-color: #111;
         }
 
         footer p {
             margin: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #fff;
         }
 
     </style>
@@ -114,42 +130,43 @@
     <a href="#roadmap">Project Roadmap</a>
     <a href="#investment">Investment</a>
     <a href="#contact">Contact</a>
+    <a href="#cpe-formula">CPE Formula</a>
 </nav>
 
 <section id="introduction">
-    <h2>🎯 Introduction: The Future of Engagement</h2>
-    <p>EngageSense is more than a system—it’s a **central Black Box for engagement data**, blending inputs from sensors, wearables, and more. Building on the success of <a href="#djsense">DJ Sense</a>, EngageSense will serve as the core hub for engagement metrics across industries like education, sports, and events.</p>
+    <h2>Introduction: The Future of Engagement</h2>
+    <p>EngageSense is more than a system—it’s a <strong>central Black Box for engagement data</strong>, blending inputs from sensors, wearables, and more. Building on the success of <a href="#djsense">DJ Sense</a>, EngageSense will serve as the core hub for engagement metrics across industries like education, sports, and events.</p>
 </section>
 
 <section id="vision">
-    <h2>🌟 Our Vision</h2>
-    <p>We envision creating a **physigital processor**, combining real-time physical and digital inputs into a **universal Cost Per Engagement (CPE)** metric that redefines how organizations measure interaction value.</p>
+    <h2>Our Vision</h2>
+    <p>We envision creating a <strong>physigital processor</strong>, combining real-time physical and digital inputs into a <strong>universal Cost Per Engagement (CPE)</strong> metric that redefines how organizations measure interaction value.</p>
 </section>
 
 <section id="metrics">
-    <h2>🚀 Metrics & Use Cases: Measuring What Matters</h2>
-    <p>EngageSense tracks engagement through **four dimensions**:</p>
+    <h2>Metrics & Use Cases: Measuring What Matters</h2>
+    <p>EngageSense tracks engagement through <strong>four dimensions</strong>:</p>
     <ul>
-        <li><a href="https://example.com/dataset/movement-intensity">Movement Intensity 🕺</a></li>
-        <li><a href="https://example.com/dataset/crowd-density">Crowd Density 👥</a></li>
-        <li><a href="https://example.com/dataset/reaction-speed">Reaction Speed ⚡</a></li>
-        <li><a href="https://example.com/dataset/biometric-data">Biometric Data 💓</a></li>
+        <li><a href="https://example.com/dataset/movement-intensity">Movement Intensity</a></li>
+        <li><a href="https://example.com/dataset/crowd-density">Crowd Density</a></li>
+        <li><a href="https://example.com/dataset/reaction-speed">Reaction Speed</a></li>
+        <li><a href="https://example.com/dataset/biometric-data">Biometric Data</a></li>
     </ul>
 
     <div class="highlight">
         <h3>Use Cases Across Industries</h3>
         <p>EngageSense optimizes performance across multiple environments:</p>
         <ul>
-            <li><strong>🎧 Music Events</strong>: Dynamic playlist adaptations.</li>
-            <li><strong>🎓 Education</strong>: Real-time teaching adaptations.</li>
-            <li><strong>🏟️ Sports</strong>: Fan engagement optimization.</li>
-            <li><strong>🎭 Theaters</strong>: Audience-driven performance pacing.</li>
+            <li><strong>Music Events</strong>: Dynamic playlist adaptations.</li>
+            <li><strong>Education</strong>: Real-time teaching adaptations.</li>
+            <li><strong>Sports</strong>: Fan engagement optimization.</li>
+            <li><strong>Theaters</strong>: Audience-driven performance pacing.</li>
         </ul>
     </div>
 </section>
 
 <section id="roadmap">
-    <h2>📅 Project Roadmap</h2>
+    <h2>Project Roadmap</h2>
     <table>
         <thead>
             <tr>
@@ -179,12 +196,29 @@
 </section>
 
 <section id="investment">
-    <h2>💡 Investment</h2>
-    <p>We are seeking **$X million** to scale EngageSense globally and establish it as the core analytics engine for real-time audience engagement.</p>
+    <h2>Investment</h2>
+    <p>We are seeking <strong>$X million</strong> to scale EngageSense globally and establish it as the core analytics engine for real-time audience engagement.</p>
+</section>
+
+<section id="cpe-formula">
+    <h2>CPE Formula: Critical Project Evaluation</h2>
+    <p>Here's a preliminary draft of the CPE (Critical Project Evaluation) Formula. This formula is designed to provide a structured method for evaluating project tasks, decisions, or initiatives by considering multiple dimensions like impact, effort, risks, and time.</p>
+
+    <h3>Preliminary CPE Formula:</h3>
+    <p><strong>CPE Score = \( \frac{(I \times W) - R}{E \times T} \)</strong></p>
+    <ul>
+        <li><strong>I</strong> = Impact (potential positive outcome or benefit of the task/project)</li>
+        <li><strong>W</strong> = Weight or importance (relative to strategic goals or objectives)</li>
+        <li><strong>R</strong> = Risks (potential downside or obstacles associated with the project)</li>
+        <li><strong>E</strong> = Effort (resources, time, and energy needed)</li>
+        <li><strong>T</strong> = Time Sensitivity (urgency or deadlines that could affect success)</li>
+    </ul>
+
+    <p><strong>CPE Goal:</strong> A higher CPE score indicates that a task/project is worth prioritizing due to its potential benefits, alignment with strategic goals, and manageable risks compared to effort and time constraints.</p>
 </section>
 
 <section id="contact">
-    <h2>🌟 Contact Us</h2>
+    <h2>Contact Us</h2>
     <p><strong>Liyam Flexer</strong></p>
     <p>Email: [Email Address]</p>
     <p>Phone: [Phone Number]</p>
