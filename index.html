@@ -6,9 +6,9 @@
     <title>EngageSense: Redefining Audience Engagement</title>
     <style>
         body {
-            font-family: 'Helvetica, Arial, sans-serif';
-            background-color: #000;
-            color: #fff;
+            font-family: 'Fira Code', monospace;
+            background-color: #0d0d0d;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
@@ -19,69 +19,72 @@
         }
 
         header h1 {
-            font-size: 3rem;
-            color: #fff;
-            border-bottom: 2px solid #fff;
+            font-size: 3.5rem;
+            color: #ffffff;
             display: inline-block;
             padding-bottom: 0.5rem;
+            border-bottom: 3px dashed #ffffff;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #111;
+            background-color: #1a1a1a;
             padding: 1rem;
             position: sticky;
             top: 0;
             z-index: 1000;
+            font-size: 1.2rem;
         }
 
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 1.5rem;
-            font-size: 1.1rem;
-            transition: color 0.3s;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
         }
 
         nav a:hover {
-            color: #ccc;
+            color: #ffcc00;
+            border-bottom: 2px solid #ffcc00;
         }
 
         section {
             padding: 3rem 10%;
+            line-height: 1.8;
         }
 
         h2 {
-            font-size: 2.2rem;
-            color: #fff;
-            border-left: 4px solid #fff;
-            padding-left: 0.5rem;
+            font-size: 2.5rem;
+            color: #ffffff;
+            border-left: 6px solid #ffcc00;
+            padding-left: 1rem;
             margin-bottom: 1.5rem;
         }
 
         p, ul, li {
             font-size: 1.1rem;
-            line-height: 1.8;
         }
 
         ul {
-            list-style-type: square;
+            list-style-type: "→ ";
             padding-left: 2rem;
         }
 
         .highlight {
-            background-color: #111;
-            padding: 1.5rem;
-            border-left: 5px solid #fff;
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-left: 5px solid #ffcc00;
+            border-radius: 8px;
             margin-bottom: 2rem;
+            font-size: 1rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 2rem 0;
-            color: #fff;
         }
 
         table th, table td {
@@ -97,22 +100,25 @@
         footer {
             text-align: center;
             padding: 2rem;
-            background-color: #111;
-        }
-
-        footer p {
-            margin: 0;
+            background-color: #1a1a1a;
+            font-size: 1rem;
         }
 
         a {
-            color: #fff;
+            color: #ffcc00;
             text-decoration: none;
-            border-bottom: 1px solid transparent;
+            border-bottom: 1px dotted transparent;
             transition: border-bottom 0.3s;
         }
 
         a:hover {
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px dotted #ffcc00;
+        }
+
+        iframe {
+            background-color: #111;
+            border: 2px dashed #ffcc00;
+            border-radius: 10px;
         }
 
     </style>
@@ -131,6 +137,7 @@
     <a href="#investment">Investment</a>
     <a href="#contact">Contact</a>
     <a href="#cpe-formula">CPE Formula</a>
+    <a href="#processor-overview">EngageSense Processor Design</a>
 </nav>
 
 <section id="introduction">
@@ -226,6 +233,15 @@
 
 <footer>
     <p>© 2025 EngageSense Project</p>
+
+<section id="processor-overview">
+    <h2>EngageSense Processor Design Overview</h2>
+    <p>The EngageSense Processor is a specialized real-time data processing unit designed to measure audience engagement dynamically across four categories: Physical, Emotional, Mental, and Spiritual engagement. Its architecture will be optimized to handle high-bandwidth sensory inputs, sound data, biometric metrics, and environmental factors. The design will allow real-time data analysis and on-the-fly decision-making, critical for live events.</p>
+
+    <h3>Real-Time Engagement Score Calculator</h3>
+    <iframe src="real-time-engagement-calculator.html" style="border:none; width:100%; height:500px;"></iframe>
+</section>
+
 </footer>
 
 </body>
